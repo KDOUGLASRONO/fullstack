@@ -60,7 +60,9 @@ function Faqs(){
                                             }   
                                         </h3>
                                     </button>
-                                    
+                                    <div className={`py-4 px-4 ${(accordion === index)?"block":"hidden"}`}>
+                                        {item.answer}
+                                    </div>
                                 </div>
                             )
                         })
